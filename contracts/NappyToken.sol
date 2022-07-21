@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract NappyToken is ERC20, ERC20Burnable, Ownable {
 
-    constructor() ERC20("NappyToken", "NPY") {}
+    constructor() ERC20("Nappy", "NPY") {}
 
     function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount * 10 ** decimals());
